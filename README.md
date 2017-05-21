@@ -1,6 +1,9 @@
-# NativeScript Emoji
+[![npm](https://img.shields.io/npm/v/nativescript-emoji.svg)](https://www.npmjs.com/package/nativescript-emoji)
+[![npm](https://img.shields.io/npm/dt/nativescript-emoji.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-emoji)
 
-Emojis for NativeScript
+# NativeScript Emoji   😀 😊🚀 
+
+A simple library to add Emoji support to your NativeScript app. Working on Android and iOS
 
 ![Emoji](emojiprintscreen.png)
 
@@ -8,8 +11,7 @@ Emojis for NativeScript
 `tns plugin add nativescript-emoji`
 
 ## Usage
-###### XML
-
+###### XML 
 ```
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:Emoji="nativescript-emoji" navigatingTo="navigatingTo" class="page">
   
@@ -37,7 +39,10 @@ registerElement("Emoji", () => require("nativescript-emoji").Emoji);
 ```
 
 ## How to use
-Set emoji property name with the short-name of the emoji. The full list you can access on the link below.
+Set emoji property name with the short-name of the emoji.
+`<Emoji:Emoji name="joy" />`
+
+The full list you can access on the link below.
 http://apps.timwhitlock.info/emoji/tables/unicode 
 
 
