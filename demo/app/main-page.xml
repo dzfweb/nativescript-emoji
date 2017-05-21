@@ -5,6 +5,9 @@
         </ActionBar>
     </Page.actionBar>
     <StackLayout orientation="horizontal">
-        <Emoji:Emoji name="kissing_smiling_eyes" />
+        <Label text="I'm happy "> </Label>
+        <Emoji:Emoji name="joy" />
+        <Emoji:Emoji name="joy" />
+        <Emoji:Emoji name="joy" />
     </StackLayout>
 </Page>

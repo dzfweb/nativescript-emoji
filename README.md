@@ -2,7 +2,7 @@
 
 Emojis for NativeScript
 
-![Emoji](emojiscreen.png)
+![Emoji](emojiprintscreen.png)
 
 ## Instalation
 `tns plugin add nativescript-emoji`
@@ -18,7 +18,10 @@ Emojis for NativeScript
         </ActionBar>
     </Page.actionBar>
     <StackLayout orientation="horizontal">
-        <Emoji:Emoji icon="128587" /> 
+        <Label text="I'm happy "> </Label>
+        <Emoji:Emoji name="joy" />
+        <Emoji:Emoji name="joy" />
+        <Emoji:Emoji name="joy" />
     </StackLayout>
 </Page>
 ```
@@ -33,16 +36,9 @@ import { Emoji } from 'nativescript-emoji';
 registerElement("Emoji", () => require("nativescript-emoji").Emoji);
 ```
 
-## IMPORTANT
-To use emoji, you need to set a valid unicode decimal value. To see the full list of emojis, click on the link below.
+## How to use
+Set emoji property name with the short-name of the emoji. The full list you can access on the link below.
+http://apps.timwhitlock.info/emoji/tables/unicode 
 
-| Emoji | Decimal Unicode |
-|:-----:|:---------------:|
-|   😁  |      128513     |
-|   😂  |      128514     |
-| 😃    |      128515     |
-|   More Emojis:     |      http://apps.timwhitlock.info/emoji/tables/unicode     |
 
-##### iOS
-The iOS support is under development
 
