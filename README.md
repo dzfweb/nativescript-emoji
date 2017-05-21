@@ -1,7 +1,7 @@
 [![npm](https://img.shields.io/npm/v/nativescript-emoji.svg)](https://www.npmjs.com/package/nativescript-emoji)
 [![npm](https://img.shields.io/npm/dt/nativescript-emoji.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-emoji)
 
-# NativeScript Emoji   😀 😊🚀 
+# NativeScript Emoji   😀😊🚀 
 
 A simple library to add Emoji support to your NativeScript app. Working on Android and iOS
 
