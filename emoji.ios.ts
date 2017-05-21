@@ -1,15 +1,15 @@
-import { iconProperty, EmojiCommon } from "./emoji.common";
+import { nameProperty, EmojiCommon } from "./emoji.common";
+import { EmojiDatabase } from "./emoji.database";
 
 global.moduleMerge(EmojiCommon, exports);
 
 export class Emoji extends EmojiCommon {
-  [iconProperty.getDefault](): number {
+  [nameProperty.getDefault](): number {
     return 0;
   }
-  [iconProperty.setNative](value: number) {
-    let emojiString = NSString.stringWithString(value.toString());
-    let nsData = emojiString.dataUsingEncoding(NSUTF8StringEncoding);
-    let nsString = NSString.alloc().initWithDataEncoding(null, NSNonLossyASCIIStringEncoding)
+  [nameProperty.setNative](value: string) {
+    let emoji = EmojiDatabase.list().find((el) => el.shortname === value).unicode;
+    let nsString = NSString.stringWithString(emoji);
     this.nativeView.text = nsString;
   }
 

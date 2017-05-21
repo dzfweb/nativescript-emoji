@@ -1,16 +1,15 @@
 import { View, Property } from "ui/core/view";
 
 export class EmojiCommon extends View {
-  icon: number;
+  name: string;
   constructor() {
       super();
   }
 }
 
-export const iconProperty = new Property<EmojiCommon, number>(
+export const nameProperty = new Property<EmojiCommon, string>(
   {
-    name: "icon",
-    defaultValue: 0,
-    valueConverter: (v) => parseInt(v),
+    name: "name",
+    defaultValue: ""
   });
-iconProperty.register(EmojiCommon);
+nameProperty.register(EmojiCommon);

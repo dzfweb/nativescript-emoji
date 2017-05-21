@@ -1,15 +1,17 @@
-import { iconProperty, EmojiCommon } from "./emoji.common";
+import { nameProperty, EmojiCommon } from "./emoji.common";
+import { EmojiDatabase } from "./emoji.database";
 import * as utils from "tns-core-modules/utils/utils";
 declare var java: any;
 
 global.moduleMerge(EmojiCommon, exports);
 
 export class Emoji extends EmojiCommon {
-  [iconProperty.getDefault](): number {
+  [nameProperty.getDefault](): number {
     return 0;
   }
-  [iconProperty.setNative](value: number) {
-    this.nativeView.setText(new java.lang.String(java.lang.Character.toChars(value)));
+  [nameProperty.setNative](value: string) {
+    let emoji = EmojiDatabase.list().find((el) => el.shortname === value).codepoint[0];
+    this.nativeView.setText(new java.lang.String(java.lang.Character.toChars(emoji)));
   }
 
   private _android: android.widget.TextView;

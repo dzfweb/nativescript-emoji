@@ -5,19 +5,6 @@
         </ActionBar>
     </Page.actionBar>
     <StackLayout orientation="horizontal">
-        <Emoji:Emoji icon="128587" /> 
-        <Emoji:Emoji icon="128514" />
-        <Emoji:Emoji icon="128523" />
-        <Emoji:Emoji icon="128524" />
-        <Emoji:Emoji icon="128525" />
-        <Emoji:Emoji icon="128526" />
-        <Emoji:Emoji icon="128527" />
-        <Emoji:Emoji icon="128528" />
-        <Emoji:Emoji icon="128529" />
-        <Emoji:Emoji icon="128530" />
-        <Emoji:Emoji icon="128531" />
-        <Emoji:Emoji icon="128532" />
-        <Emoji:Emoji icon="128533" />
-        <Emoji:Emoji icon="128534" />
+        <Emoji:Emoji name="kissing_smiling_eyes" />
     </StackLayout>
 </Page>
