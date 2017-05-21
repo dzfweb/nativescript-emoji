@@ -13,8 +13,7 @@ A simple library to add Emoji support to your NativeScript app. Working on Andro
 ## Usage
 ###### XML 
 ```
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:Emoji="nativescript-emoji" navigatingTo="navigatingTo" class="page">
-  
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:Emoji="nativescript-emoji" navigatingTo="navigatingTo" class="page">  
     <Page.actionBar>
         <ActionBar title="NativeScript Emoji" icon="" class="action-bar">
         </ActionBar>
@@ -40,6 +39,7 @@ registerElement("Emoji", () => require("nativescript-emoji").Emoji);
 
 ## How to use
 Set emoji property name with the short-name of the emoji.
+
 `<Emoji:Emoji name="joy" />`
 
 The full list you can access on the link below.
