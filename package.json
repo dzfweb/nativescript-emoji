@@ -1,6 +1,6 @@
 {
   "name": "nativescript-emoji",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Emoji for NativeScript",
   "main": "emoji",
   "typings": "index.d.ts",
