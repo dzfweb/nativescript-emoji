@@ -9,7 +9,6 @@
         <Label text="Tap the button" class="h1 text-center"/>
         <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
         <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
-        <Emoji:Emoji/>
-        <Emoji:Emoji/>
+        <Emoji:Emoji icon="128587" />
     </StackLayout>
 </Page>

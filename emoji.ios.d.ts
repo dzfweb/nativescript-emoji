@@ -1,3 +1,3 @@
-import common = require("./emoji.common");
-export declare class Emoji extends common.Emoji {
+import { EmojiCommon } from "./emoji.common";
+export declare class Emoji extends EmojiCommon {
 }

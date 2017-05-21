@@ -1,24 +1,28 @@
-import common = require("./emoji.common");
+import { iconProperty, EmojiCommon } from "./emoji.common";
 import * as utils from "tns-core-modules/utils/utils";
 declare var java: any;
 
-global.moduleMerge(common, exports);
+global.moduleMerge(EmojiCommon, exports);
 
-export class Emoji extends common.Emoji {
-  private _android: any;
-
-  get android() {
-    return this._android;
+export class Emoji extends EmojiCommon {
+  [iconProperty.getDefault](): number {
+    return 0;
+  }
+  [iconProperty.setNative](value: number) {
+    // this.nativeView.setText(new java.lang.String(java.lang.Character.toChars(128513)));
+    this.nativeView.setText(new java.lang.String(java.lang.Character.toChars(value)));
   }
 
-  get _nativeView() {
-    return this._android;
+  private _android: android.widget.TextView;
+
+  get android() {
+    return this.nativeView;
   }
 
   public createNativeView() {
     this._android = new android.widget.TextView(utils.ad.getApplicationContext());
-    let unicode:number = 0x1F60A;
-    this._android.setText(new java.lang.String(java.lang.Character.toChars(unicode)));
+    // let unicode:number = 0x1F60A;
+    // this._android.setText(new java.lang.String(java.lang.Character.toChars(unicode)));
     return this._android;
   }
 }
