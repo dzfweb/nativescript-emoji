@@ -1,14 +1,23 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:Emoji="nativescript-emoji" navigatingTo="navigatingTo" class="page">
   
     <Page.actionBar>
-        <ActionBar title="My App" icon="" class="action-bar">
+        <ActionBar title="NativeScript Emoji" icon="" class="action-bar">
         </ActionBar>
     </Page.actionBar>
-    
-    <StackLayout class="p-20">
-        <Label text="Tap the button" class="h1 text-center"/>
-        <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
-        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
-        <Emoji:Emoji icon="128587" />
+    <StackLayout orientation="horizontal">
+        <Emoji:Emoji icon="128587" /> 
+        <Emoji:Emoji icon="128514" />
+        <Emoji:Emoji icon="128523" />
+        <Emoji:Emoji icon="128524" />
+        <Emoji:Emoji icon="128525" />
+        <Emoji:Emoji icon="128526" />
+        <Emoji:Emoji icon="128527" />
+        <Emoji:Emoji icon="128528" />
+        <Emoji:Emoji icon="128529" />
+        <Emoji:Emoji icon="128530" />
+        <Emoji:Emoji icon="128531" />
+        <Emoji:Emoji icon="128532" />
+        <Emoji:Emoji icon="128533" />
+        <Emoji:Emoji icon="128534" />
     </StackLayout>
 </Page>

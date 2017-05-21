@@ -9,7 +9,6 @@ export class Emoji extends EmojiCommon {
     return 0;
   }
   [iconProperty.setNative](value: number) {
-    // this.nativeView.setText(new java.lang.String(java.lang.Character.toChars(128513)));
     this.nativeView.setText(new java.lang.String(java.lang.Character.toChars(value)));
   }
 
@@ -21,8 +20,6 @@ export class Emoji extends EmojiCommon {
 
   public createNativeView() {
     this._android = new android.widget.TextView(utils.ad.getApplicationContext());
-    // let unicode:number = 0x1F60A;
-    // this._android.setText(new java.lang.String(java.lang.Character.toChars(unicode)));
     return this._android;
   }
 }
