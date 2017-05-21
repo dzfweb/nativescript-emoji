@@ -1,5 +1,4 @@
 import { iconProperty, EmojiCommon } from "./emoji.common";
-import * as utils from "tns-core-modules/utils/utils";
 declare var java: any;
 
 global.moduleMerge(EmojiCommon, exports);
