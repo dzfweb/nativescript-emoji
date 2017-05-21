@@ -2,7 +2,7 @@
 
 Emojis for NativeScript
 
-![Emoji](emoji.png)
+![Emoji](emojiscreen.png)
 
 ## Instalation
 `tns plugin add nativescript-emoji`
