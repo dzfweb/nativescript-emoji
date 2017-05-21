@@ -34,6 +34,8 @@ import { Emoji } from 'nativescript-emoji';
 
 ###### ANGULAR
 ```
+import { registerElement } from "nativescript-angular/element-registry";
+
 registerElement("Emoji", () => require("nativescript-emoji").Emoji);
 ```
 
