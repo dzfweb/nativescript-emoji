@@ -6,8 +6,8 @@ declare var java: any;
 global.moduleMerge(EmojiCommon, exports);
 
 export class Emoji extends EmojiCommon {
-  [nameProperty.getDefault](): number {
-    return 0;
+  [nameProperty.getDefault](): string {
+    return '';
   }
   [nameProperty.setNative](value: string) {
     let emoji = EmojiDatabase.list().find((el) => el.shortname === value).codepoint[0];

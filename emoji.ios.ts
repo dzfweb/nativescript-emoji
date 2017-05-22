@@ -4,8 +4,8 @@ import { EmojiDatabase } from "./emoji.database";
 global.moduleMerge(EmojiCommon, exports);
 
 export class Emoji extends EmojiCommon {
-  [nameProperty.getDefault](): number {
-    return 0;
+  [nameProperty.getDefault](): string {
+    return '';
   }
   [nameProperty.setNative](value: string) {
     let emoji = EmojiDatabase.list().find((el) => el.shortname === value).unicode;
