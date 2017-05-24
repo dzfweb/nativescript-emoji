@@ -44,6 +44,11 @@ Set emoji property name with the short-name of the emoji.
 
 `<Emoji:Emoji name="joy" />`
 
+### Available Properties
+
+`name`: emoji short-name
+`size`: size to display emoji
+
 The full list you can access on the link below.
 http://apps.timwhitlock.info/emoji/tables/unicode 
 
