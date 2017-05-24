@@ -18,7 +18,7 @@ export class Emoji extends EmojiCommon {
   }
 
   [sizeProperty.setNative](value: number) {
-    this.nativeView.font = UIFont.fontWithNameSize(null, value);
+    this.nativeView.font = UIFont.fontWithNameSize("HelveticaNeue", value);
   }
 
   private _ios: UILabel;
