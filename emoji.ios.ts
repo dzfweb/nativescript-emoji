@@ -1,4 +1,4 @@
-import { nameProperty, EmojiCommon } from "./emoji.common";
+import { nameProperty, EmojiCommon, sizeProperty } from "./emoji.common";
 import { EmojiDatabase } from "./emoji.database";
 
 global.moduleMerge(EmojiCommon, exports);
@@ -11,6 +11,14 @@ export class Emoji extends EmojiCommon {
     let emoji = EmojiDatabase.list().find((el) => el.shortname === value).unicode;
     let nsString = NSString.stringWithString(emoji);
     this.nativeView.text = nsString;
+  }
+
+  [sizeProperty.getDefault](): number {
+    return 10;
+  }
+
+  [sizeProperty.setNative](value: number) {
+    this.nativeView.font = UIFont.fontWithNameSize(null, value);
   }
 
   private _ios: UILabel;

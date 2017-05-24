@@ -4,3 +4,4 @@ export declare class EmojiCommon extends View {
     constructor();
 }
 export declare const nameProperty: Property<EmojiCommon, string>;
+export declare const sizeProperty: Property<EmojiCommon, number>;
