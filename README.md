@@ -51,7 +51,8 @@ Set emoji property name with the short-name of the emoji.
 `size`: size to display emoji
 
 The full list you can access on the link below.
-http://apps.timwhitlock.info/emoji/tables/unicode 
+https://raw.githubusercontent.com/dzfweb/nativescript-emoji/master/emoji.database.ts
+
 
 
 
