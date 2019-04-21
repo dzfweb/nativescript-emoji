@@ -39,10 +39,20 @@ import { registerElement } from "nativescript-angular/element-registry";
 registerElement("Emoji", () => require("nativescript-emoji").Emoji);
 ```
 
+###### NATIVESCRIPT-VUE
+Add the following to your main.js, app.js or other entry point
+```
+Vue.registerElement('Emoji', () => require('nativescript-emoji').Emoji)
+```
+
+
 ## How to use
 Set emoji property name with the short-name of the emoji.
 
 `<Emoji:Emoji name="joy" />`
+
+With Nativescript-Vue
+`<Emoji name="joy" />
 
 ### Available Properties
 
