@@ -52,7 +52,7 @@ Set emoji property name with the short-name of the emoji.
 `<Emoji:Emoji name="joy" />`
 
 With Nativescript-Vue
-`<Emoji name="joy" />
+`<Emoji name="joy" />`
 
 ### Available Properties
 
